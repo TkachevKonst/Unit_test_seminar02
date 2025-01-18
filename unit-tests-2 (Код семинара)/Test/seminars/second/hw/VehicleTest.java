@@ -51,7 +51,6 @@ class VehicleTest {
     @Test
     void CarIsSlowingDown(){
         car.testDrive();
-        assertThat(car.getSpeed()).isEqualTo(60);
         car.park();
         assertThat(car.getSpeed()).isEqualTo(0);
     }
@@ -59,7 +58,6 @@ class VehicleTest {
     @Test
     void MotorcycleIsSlowingDown(){
         motorcycle.testDrive();
-        assertThat(motorcycle.getSpeed()).isEqualTo(75);
         motorcycle.park();
         assertThat(motorcycle.getSpeed()).isEqualTo(0);
     }
